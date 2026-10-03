@@ -1,0 +1,18 @@
+COMO PUBLICAR O PERFIL E LIGAR A COBRINHA
+
+1) Dê dois cliques em CONSERTAR.bat (nesta pasta).
+   Ele faz sozinho:
+   - renomeia _github para .github (o GitHub só roda a cobrinha ali);
+   - apaga o snake.yml solto na raiz e os arquivos das versões antigas;
+   - envia tudo para github.com/KaioNacamura/KaioNacamura.
+   No primeiro envio pode abrir o navegador pedindo login no GitHub.
+   Ao terminar, ele abre a página de configurações do repositório.
+
+2) Na página que abriu:
+   Workflow permissions > Read and write permissions > Save.
+
+3) Aba Actions > GitHub Snake Game > Run workflow.
+   Espere uns 2 minutos até ficar verde e atualize o seu perfil.
+
+Se algo der erro, copie a mensagem da janela preta ou da aba Actions
+e mande para o Claude.
