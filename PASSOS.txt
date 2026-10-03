@@ -1,0 +1,33 @@
+COMO ATUALIZAR O SEU PERFIL NO GITHUB (versão profissional)
+
+1) Limpar e ativar a cobrinha
+   No Git Bash, dentro desta pasta:
+
+     cd "/d/Downloads/Indefinido/KaioNacamura-main/KaioNacamura-main"
+     rm -f assets/header-dark.svg assets/header-light.svg assets/stack-dark.svg assets/stack-light.svg assets/footer.svg assets/projetos/lead-capture-api.svg assets/projetos/safe-upload.svg
+     mv _github .github
+     rm snake.yml
+
+   O primeiro rm apaga os arquivos da versão anterior, que não são mais
+   usados. O workflow da cobrinha é o mesmo que você fez, só muda de
+   lugar: o GitHub só executa workflows dentro de .github/workflows.
+
+2) Mandar para o GitHub
+
+     git init
+     git add .
+     git commit -m "Perfil no tema do LinkedIn"
+     git remote add origin https://github.com/KaioNacamura/KaioNacamura.git
+     git push -u origin main --force
+
+   O --force troca o conteúdo antigo pelo novo. Use só neste repositório.
+
+3) Gerar a cobrinha
+   No repositório KaioNacamura, aba Actions, "GitHub Snake Game",
+   "Run workflow". Depois ela atualiza sozinha todo dia.
+   Se der erro de permissão: Settings > Actions > General > Workflow
+   permissions > "Read and write permissions" > Save, e rode de novo.
+
+4) Conferir o CodePen
+   O link ficou https://codepen.io/Kaio-nacamura. Se o seu usuário for
+   outro, troque no README.md ou apague a linha.
